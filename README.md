@@ -31,11 +31,6 @@
 ### Flight data
 
 
-![Balloon burst at 33 km amsl](doc/img/balloon_burst.JPG)
-
-![Data measured by dosimeters](doc/img/dosimeters_data.png)
-
-
  The more detailed description of the flight and discussion of experiment is included in [EURADOS presentation](doc/FIK-6_EURADOS_presentation.pdf)
 
 ### Links
