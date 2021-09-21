@@ -10,6 +10,7 @@
 
   * PiTED
   * SPACEDOS dosimeters
+  * THUNDERMILL01
 
 ### Supporting instruments
 
