@@ -1,0 +1,18 @@
+[submodule "cad/src/telemetry_helix/gondola_helix"]
+	path = cad/src/telemetry_helix/gondola_helix
+	url = https://github.com/ODZ-UJF-AV-CR/QFH-Antenna.git
+[submodule "doc/LION2CELL01"]
+	path = doc/LION2CELL01
+	url = https://github.com/mlab-modules/LION2CELL01
+[submodule "doc/Nicoll_GT"]
+	path = doc/Nicoll_GT
+	url = https://github.com/Sommema4/Nicoll_GT.git
+[submodule "sw/autopilot/PX4Firmware"]
+	path = fw/Autopilot/PX4Firmware
+	url = git@github.com:ThunderFly-aerospace/PX4Firmware.git
+[submodule "fw/Autopilot/px4_lora"]
+	path = fw/Autopilot/px4_lora
+	url = git@github.com:povik/px4_lora.git
+[submodule "fw/SiK"]
+	path = fw/SiK
+	url = https://github.com/ThunderFly-aerospace/SiK.git
