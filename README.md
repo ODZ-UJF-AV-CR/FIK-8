@@ -17,7 +17,7 @@
   * Relative humidity sensor (THUNDERMILL01)
   * Temperature sensor (THUNDERMILL01)
   * Precise barometer
-  * Spheric (360 deg) camera
+  * Spheric (360 deg) camera - engine position
 
 ### Design features
 
