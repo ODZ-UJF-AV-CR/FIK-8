@@ -1,7 +1,6 @@
-# FIK-6
+# FIK-8
 [Department of Radiation Dosimetry of the Nuclear Physics Institute of the Czech Academy of Sciences](http://www.ujf.cas.cz/en/departments/department-of-radiation-dosimetry/contact/) high-altitude balloon experiment
 
-![FIK-6 gondola pre-flight test weight](doc/img/FIK-6_gondola_weight.jpg)
 
 
 ![Block diagram](doc/img/block_schematics.png)
@@ -9,9 +8,8 @@
 
 ### Scientific payload
 
-  * Iontometer
-  * AIRDOS dosimeters
-
+  * PiTED
+  * SPACEDOS dosimeters
 
 ### Supporting instruments
 
