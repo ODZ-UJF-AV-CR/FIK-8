@@ -62,9 +62,9 @@ void setup() {
   config.xclk_freq_hz = 20000000;
   config.pixel_format = PIXFORMAT_JPEG; 
 
-  config.frame_size = FRAMESIZE_VGA;  // QVGA|CIF|VGA|SVGA|XGA|SXGA|UXGA
+  config.frame_size = FRAMESIZE_UXGA;  // QVGA|CIF|VGA|SVGA|XGA|SXGA|UXGA
   config.jpeg_quality = 10;
-  config.fb_count = 2;
+  config.fb_count = 1;
 
   // Init SD Card
   Serial.println("Initializing SD Card");
@@ -87,14 +87,14 @@ void setup() {
     return;
   }
 
-  pinMode(control_pin, INPUT); // control pin
+  pinMode(control_pin, INPUT_PULLUP); // control pin
 }
 
 void loop() {
   fs::FS &fs = SD_MMC;
   if(!digitalRead(control_pin)){
     if(recording){
-      capture(folder_name + "/image" + String(picture_num) + ".jpg", fs);
+      capture(folder_name + "/image" + String(picture_num) + "_" +  String(millis() - start_time ) + ".jpg", fs);
 
       // print info
       Serial.print("Current FPS: ");
@@ -106,7 +106,7 @@ void loop() {
       Serial.println(picture_num * 1000.0 / (millis() - recording_start_time));
     }
     else {  // start recording
-      if(!start_time){
+      if(!start_time){  // first time recording
         start_time = millis();  // FIK-8 initialization time
         }
       
@@ -137,7 +137,7 @@ void loop() {
     Serial.println("Ending recording...");
     
     // log time of recording end
-    File millis_file = fs.open(folder_name + "/millis.txt");
+    File millis_file = fs.open(folder_name + "/millis.txt", FILE_APPEND);
     millis_file.print("\nend: " + String(millis() - start_time));
     millis_file.close();
     
