@@ -1,7 +1,7 @@
 import cv2
 import os
 
-image_folder = 'pictures'
+folder = 'pictures'
 
 subfolders = [ f.path for f in os.scandir(folder) if f.is_dir() ]
 
